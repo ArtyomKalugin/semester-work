@@ -1,8 +1,8 @@
-package com.solncev.net.dao.impl;
+package com.kalugin.net.dao.impl;
 
-import com.solncev.net.dao.Dao;
-import com.solncev.net.helper.PostgresConnectionHelper;
-import com.solncev.net.model.User;
+import com.kalugin.net.dao.Dao;
+import com.kalugin.net.helper.PostgresConnectionHelper;
+import com.kalugin.net.model.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -1,7 +1,8 @@
-package com.solncev.net.filter;
+package com.kalugin.net.filter;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -19,9 +20,10 @@ public class AuthenticationFilter implements Filter {
         HttpServletRequest request = (HttpServletRequest) servletRequest;
         HttpServletResponse response = (HttpServletResponse) servletResponse;
 
-        String uri = request.getRequestURI();
+        String url = request.getRequestURI();
         HttpSession session = request.getSession(false);
-        if (session == null && !uri.contains("login")) {
+
+        if (session == null && !url.contains("login")) {
             response.sendRedirect("login.html");
         } else {
             filterChain.doFilter(servletRequest, servletResponse);
@@ -30,6 +32,6 @@ public class AuthenticationFilter implements Filter {
 
     @Override
     public void destroy() {
-
+        Filter.super.destroy();
     }
 }

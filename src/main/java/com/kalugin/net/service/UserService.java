@@ -1,7 +1,7 @@
-package com.solncev.net.service;
+package com.kalugin.net.service;
 
-import com.solncev.net.dto.UserDTO;
-import com.solncev.net.model.User;
+import com.kalugin.net.dto.UserDTO;
+import com.kalugin.net.model.User;
 
 import java.util.List;
 

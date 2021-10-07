@@ -1,4 +1,4 @@
-package com.solncev.net.client;
+package com.kalugin.net.client;
 
 import java.io.*;
 import java.net.HttpURLConnection;

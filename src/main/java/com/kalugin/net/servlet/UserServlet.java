@@ -1,8 +1,8 @@
-package com.solncev.net.servlet;
+package com.kalugin.net.servlet;
 
-import com.solncev.net.dto.UserDTO;
-import com.solncev.net.service.UserService;
-import com.solncev.net.service.impl.UserServiceImpl;
+import com.kalugin.net.service.impl.UserServiceImpl;
+import com.kalugin.net.dto.UserDTO;
+import com.kalugin.net.service.UserService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -16,6 +16,9 @@ import java.util.List;
 public class UserServlet extends HttpServlet {
 
     private final UserService userService = new UserServiceImpl();
+
+    private static final List<UserDTO> USERS = Arrays.asList(new UserDTO("Tape", "Na Babkah"),
+            new UserDTO("Artem", "Kalugin"));
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

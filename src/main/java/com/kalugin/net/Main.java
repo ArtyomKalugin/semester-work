@@ -1,4 +1,4 @@
-package com.solncev.net;
+package com.kalugin.net;
 
 import java.util.Arrays;
 import java.util.function.Predicate;

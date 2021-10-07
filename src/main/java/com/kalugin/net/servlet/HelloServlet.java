@@ -1,4 +1,4 @@
-package com.solncev.net.servlet;
+package com.kalugin.net.servlet;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;

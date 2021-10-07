@@ -1,7 +1,8 @@
-package com.solncev.net.filter;
+package com.kalugin.net.filter;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.util.Arrays;
@@ -14,8 +15,8 @@ public class LoggingFilter implements Filter {
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
-        this.context = filterConfig.getServletContext();
-        this.context.log("LoggingFilter initialized");
+        context = filterConfig.getServletContext();
+        context.log("loggingFilter initialized");
     }
 
     @Override
@@ -24,9 +25,8 @@ public class LoggingFilter implements Filter {
         Map<String, String[]> requestParamMap = request.getParameterMap();
 
         if (requestParamMap != null) {
-            requestParamMap.forEach((k, v) -> this.context.log(request.getRemoteAddr() +
-                    " : Request params: {" + k + "=" + Arrays.toString(v) + "}")
-            );
+            requestParamMap.forEach((k, v) -> context.log(request.getRemoteAddr() +
+                    " : Request params: {" + k + "-" + Arrays.toString(v) + "}"));
         }
 
         filterChain.doFilter(servletRequest, servletResponse);
@@ -34,6 +34,6 @@ public class LoggingFilter implements Filter {
 
     @Override
     public void destroy() {
-
+        Filter.super.destroy();
     }
 }

@@ -1,11 +1,11 @@
-package com.solncev.net.service.impl;
+package com.kalugin.net.service.impl;
 
-import com.solncev.net.dao.Dao;
-import com.solncev.net.dao.impl.UserDaoImpl;
-import com.solncev.net.dto.UserDTO;
-import com.solncev.net.helper.PasswordHelper;
-import com.solncev.net.model.User;
-import com.solncev.net.service.UserService;
+import com.kalugin.net.helper.PasswordHelper;
+import com.kalugin.net.model.User;
+import com.kalugin.net.dao.Dao;
+import com.kalugin.net.dao.impl.UserDaoImpl;
+import com.kalugin.net.dto.UserDTO;
+import com.kalugin.net.service.UserService;
 
 import java.util.List;
 import java.util.stream.Collectors;

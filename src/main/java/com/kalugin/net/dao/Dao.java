@@ -1,4 +1,4 @@
-package com.solncev.net.dao;
+package com.kalugin.net.dao;
 
 import java.util.List;
 

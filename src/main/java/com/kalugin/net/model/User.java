@@ -1,4 +1,4 @@
-package com.solncev.net.model;
+package com.kalugin.net.model;
 
 public class User {
     private int id;

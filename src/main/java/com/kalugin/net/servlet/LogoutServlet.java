@@ -1,4 +1,4 @@
-package com.solncev.net.servlet;
+package com.kalugin.net.servlet;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -7,7 +7,6 @@ import java.io.IOException;
 
 @WebServlet(name = "logout", urlPatterns = "/logout")
 public class LogoutServlet extends HttpServlet {
-
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Cookie[] cookies = req.getCookies();

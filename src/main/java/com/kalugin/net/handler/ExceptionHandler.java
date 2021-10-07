@@ -1,4 +1,4 @@
-package com.solncev.net.handler;
+package com.kalugin.net.handler;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

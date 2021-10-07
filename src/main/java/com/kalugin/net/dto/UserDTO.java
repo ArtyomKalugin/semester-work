@@ -1,4 +1,4 @@
-package com.solncev.net.dto;
+package com.kalugin.net.dto;
 
 public class UserDTO {
     private String firstName;

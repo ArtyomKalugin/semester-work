@@ -1,4 +1,4 @@
-package com.solncev.net.helper;
+package com.kalugin.net.helper;
 
 import javax.xml.bind.DatatypeConverter;
 import java.security.MessageDigest;
